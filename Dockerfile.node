@@ -1,0 +1,5 @@
+FROM dev:latest
+RUN cd / && git clone https://github.com/nodejs/node
+WORKDIR /node
+RUN ./configure
+CMD tail -f
