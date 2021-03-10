@@ -4,8 +4,8 @@ on:
     branches: [main]
 
 jobs:
-  timeout-minutes: 20
   build:
+    timeout-minutes: 20
     runs-on: ubuntu-latest
     strategy:
       matrix:
