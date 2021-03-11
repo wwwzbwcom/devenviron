@@ -1,4 +1,4 @@
-FROM dev:latest
+FROM devenviron/base:latest
 RUN cd / && git clone https://github.com/nodejs/node
 WORKDIR /node
 RUN ./configure
