@@ -14,7 +14,4 @@ RUN apt install -y tmux unzip vim software-properties-common htop man
 RUN apt install -y openssh-client openssh-server
 # Terminal
 RUN apt install -y tmux screen 
-RUN cd / && git clone https://github.com/nodejs/node
-WORKDIR /node
-RUN ./configure
 CMD tail -f
